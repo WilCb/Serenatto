@@ -38,7 +38,7 @@
                 <a class="nav-link" href="#">Sobre</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
+                <a class="nav-link" href="#contato">Contato</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
@@ -171,9 +171,43 @@
       </div>
     </section>
 
-
-
     <section class="banners banner-3">
+    </section>
+
+    <!-- Formulário -->
+    <section class="py-4 container">
+      <div class="border border-2 rounded p-3">
+        <h3 class="fw-bold p-3">Entre em contato!</h3>
+        <form id="contato">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingNome" placeholder="Nome">
+            <label for="floatingNome">Nome</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingEmail" placeholder="nome@exemplo.com">
+            <label for="floatingEmail">Email</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="tel" class="form-control" id="floatingTelefone" placeholder="Telefone">
+            <label for="floatingTelefone">Telefone</label>
+          </div>
+          <select class="form-select mb-3" aria-label="Default select example">
+            <option selected>Preferência de contato:</option>
+            <option value="1">WhatsApp</option>
+            <option value="2">E-mail</option>
+            <option value="3">Ligação</option>
+          </select>
+          <label for="nivel-satisfacao" class="form-label">Nível de satisfação:</label>
+          <input type="range" class="form-range" id="nivel-satisfacao">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Deseja receber novidades por email?
+            </label>
+          </div>
+          <button type="button" class="btn botao-padrao w-100 fw-bold mt-3 py-3">Enviar</button>
+        </form>
+      </div>
     </section>
   </main>
 
@@ -334,7 +368,8 @@
           </p>
         </div>
         <div class="modal-footer mx-auto">
-          <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar janela</button>
+          <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar
+            janela</button>
         </div>
       </div>
     </div>
@@ -352,14 +387,21 @@
         <div class="modal-body">
           <img class="w-100" src="./assets/produtos-cafe-especial.png" alt="Xícara de café preto">
           <p>
-            Somos conhecidos também por nossos cafés especiais, que são cuidadosamente preparados com grãos selecionados de alta qualidade e técnicas de preparo precisas.
+            Somos conhecidos também por nossos cafés especiais, que são cuidadosamente preparados com grãos selecionados
+            de alta qualidade e técnicas de preparo precisas.
           </p>
           <p>
-            Entre as opções de cafés especiais do Café & Bistrô Serenatto, destacamos o café aeropress, que é preparado com uma técnica de imersão e pressão, resultando em uma bebida de sabor intenso e aroma acentuado. Outra opção popular é o café Hario V60, que é preparado com um filtro de papel em formato de cone e resulta em uma bebida limpa e suave, ressaltando as notas sensoriais dos grãos. Além disso, oferecemos uma variedade de bebidas geladas, como o café gelado, que é preparado com grãos torrados escuros e servido com gelo e leite, resultando em uma bebida refrescante e saborosa.
+            Entre as opções de cafés especiais do Café & Bistrô Serenatto, destacamos o café aeropress, que é preparado
+            com uma técnica de imersão e pressão, resultando em uma bebida de sabor intenso e aroma acentuado. Outra
+            opção popular é o café Hario V60, que é preparado com um filtro de papel em formato de cone e resulta em uma
+            bebida limpa e suave, ressaltando as notas sensoriais dos grãos. Além disso, oferecemos uma variedade de
+            bebidas geladas, como o café gelado, que é preparado com grãos torrados escuros e servido com gelo e leite,
+            resultando em uma bebida refrescante e saborosa.
           </p>
         </div>
         <div class="modal-footer mx-auto">
-          <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar janela</button>
+          <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar
+            janela</button>
         </div>
       </div>
     </div>
