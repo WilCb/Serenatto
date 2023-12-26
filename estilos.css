@@ -3,7 +3,6 @@ body {
   --marrom-escuro: #816D4F;
   --marrom-claro: #B29463;
   font-family: 'Barlow', sans-serif;
-  height: 4000px;
 }
 
 .banners {
@@ -26,6 +25,10 @@ input[type="checkbox"]:focus {
   border-color: var(--marrom-claro);
   box-shadow: none;
   outline: none;
+}
+
+.input-range::-webkit-slider-thumb {
+  background-color: var(--marrom-claro);
 }
 
 .banner-1 {
@@ -58,4 +61,16 @@ input[type="checkbox"]:focus {
 }
 .botao-padrao:hover {
   background-color: var(--marrom-escuro);
+}
+
+.bg-footer {
+  background-color: var(--marrom-claro);
+  color: black;
+}
+
+[data-bs-theme="dark"] {
+  color: white;
+  .nav-link, .card-body, .offcanvas, .accordion-body, .accordion-button, .btn, .fs-6 {
+    color: white;
+  }
 }
